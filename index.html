@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Peel Automotive Diagnostics &amp; Repair</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&amp;family=Orbitron:wght@600;800&amp;display=swap" rel="stylesheet"/>
+<style>
+  body { font-family: 'Rajdhani', sans-serif; }
+  h1, .hero-title { font-family: 'Orbitron', sans-serif; }
+  html { scroll-padding-top: 128px; } /* 8rem */
+
+</style>
+</head>
+<body class="bg-white text-gray-900">
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-[#0d1117]/80 text-white px-6 py-4 shadow-lg z-50 border-b border-gray-800 flex justify-between items-center">
+<div class="text-2xl font-bold tracking-wider">Peel Auto</div>
+<button class="md:hidden text-white focus:outline-none" id="menu-btn">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<div class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide">
+<a class="hover:text-red-500 transition duration-200" href="#about">About</a>
+<a class="hover:text-red-500 transition duration-200" href="#services">Services</a>
+<a class="hover:text-red-500 transition duration-200" href="#testimonials">Testimonials</a>
+<a class="hover:text-red-500 transition duration-200" href="#faq">FAQ</a>
+<a class="hover:text-red-500 transition duration-200" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- MOBILE MENU (Outside Nav) -->
+<div class="fixed top-0 right-0 w-full h-full bg-[#0d1117] bg-opacity-95 px-6 pt-28 pb-10 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col space-y-6 text-xl font-semibold tracking-wide z-40 md:hidden text-white" id="menu">
+<a class="hover:text-red-500 transition duration-200" href="#about">About</a>
+<a class="hover:text-red-500 transition duration-200" href="#services">Services</a>
+<a class="hover:text-red-500 transition duration-200" href="#testimonials">Testimonials</a>
+<a class="hover:text-red-500 transition duration-200" href="#faq">FAQ</a>
+<a class="hover:text-red-500 transition duration-200" href="#contact">Contact</a>
+</div>
+<!-- HERO -->
+<section class="flex-col via-[#161b22] h-screen text-white to-[#0d1117] justify-center items-center text-center pt-20 relative overflow-hidden overflow-x-hidden flex from-[#0d1117] bg-gradient-to-br px-6">
+<div class="max-w-3xl z-10" data-aos="zoom-in">
+<h1 class="hero-title px-2 text-4xl leading-tight tracking-tight md:text-8xl text-white font-extrabold break-words sm:text-5xl drop-shadow">PEEL AUTOMOTIVE</h1>
+<p class="text-xl md:text-2xl tracking-widest text-gray-300 font-medium mt-2 uppercase">Diagnostic &amp; Repair</p>
+<p class="mt-4 text-lg md:text-xl text-gray-300 tracking-wide">Electrical • Engine Diagnosis • Troubleshooting</p>
+<p class="mt-4 text-md md:text-lg text-gray-300">📞 <a class="underline hover:text-red-500" href="tel:6478659905">647-865-9905</a></p>
+<p class="text-md md:text-lg text-gray-300">📍 18 Strathearn Ave Unit 28-29, Brampton, ON</p>
+<div class="w-full flex-col md:flex-row mt-6 gap-4 justify-center items-center flex">
+<a class="inline-block px-8 py-3 md:px-10 md:py-4 bg-red-600 hover:bg-red-700 text-white text-lg md:text-xl rounded-xl font-semibold transition-all shadow-xl" href="tel:6478659905">Call Now</a>
+<a class="inline-block px-8 py-3 md:px-10 md:py-4 bg-gray-700 hover:bg-gray-800 text-white text-lg md:text-xl rounded-xl font-semibold transition-all shadow-xl" href="https://www.google.com/maps/dir/?api=1&amp;destination=18+Strathearn+Ave+Unit+28-29,+Brampton,+ON" target="_blank">Get Directions</a>
+</div>
+</div>
+<div class="absolute w-full h-full z-0 opacity-10 bg-cover bg-center" style="background-image: url('./images/gears.png');"></div>
+</section>
+<!-- ABOUT -->
+<section class="py-20 px-4 bg-white text-center text-gray-900" data-aos="fade-up" id="about">
+<h2 class="text-4xl font-bold text-[#1f3c88] mb-4">About Peel Auto</h2>
+<div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+<p>We specialize in pinpoint electrical diagnostics, engine troubleshooting, and reliable vehicle repair work. Based in Brampton ON, we deliver professional results with honest service, top-notch tools, and real mechanic experience.</p>
+</div>
+</section>
+<!-- SERVICES -->
+<section class="py-20 px-6 bg-gray-100 text-center text-gray-900" data-aos="fade-up" id="services">
+<h2 class="text-4xl font-bold text-[#1f3c88] mb-10">Services Offered</h2>
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+<div class="bg-white bg-opacity-90 backdrop-blur p-6 shadow-lg rounded-xl border-l-4 border-red-600 text-left hover:scale-105 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">⚡ Electrical Diagnostics</h3>
+<p class="text-gray-700">From sensor faults to wiring issues — accurate and quick diagnosis with high-end tools.</p>
+</div>
+<div class="bg-white bg-opacity-90 backdrop-blur p-6 shadow-lg rounded-xl border-l-4 border-red-600 text-left hover:scale-105 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">🔧 Engine Diagnostics</h3>
+<p class="text-gray-700">Check engine lights, misfires, and performance drops — we find and fix the source fast.</p>
+</div>
+<div class="bg-white bg-opacity-90 backdrop-blur p-6 shadow-lg rounded-xl border-l-4 border-red-600 text-left hover:scale-105 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">🔌 Electrical Repairs</h3>
+<p class="text-gray-700">Wiring, fuses, relays, modules — fixed professionally and safely.</p>
+</div>
+<div class="bg-white bg-opacity-90 backdrop-blur p-6 shadow-lg rounded-xl border-l-4 border-red-600 text-left hover:scale-105 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">🛠 Troubleshooting</h3>
+<p class="text-gray-700">Strange noises? Issues no one else can fix? We’ll diagnose it and solve it.</p>
+</div>
+</div>
+</section>
+<!-- TESTIMONIALS -->
+<section class="py-20 px-6 bg-gray-100 text-center text-gray-900" data-aos="fade-up" id="testimonials">
+<h2 class="text-4xl font-bold text-[#1f3c88] mb-6">What Clients Say</h2>
+<div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+<div class="bg-white p-6 rounded-xl shadow-md text-left text-gray-800 border border-gray-300">"Fast and honest! Found the issue no one else could." — J. Singh</div>
+<div class="bg-white p-6 rounded-xl shadow-md text-left text-gray-800 border border-gray-300">"Great service, fair price. Highly recommend Peel Auto." — R. Dhillon</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-20 px-6 bg-white text-center text-gray-900" data-aos="fade-up" id="faq">
+<h2 class="text-4xl font-bold text-[#1f3c88] mb-6">FAQs</h2>
+<div class="max-w-3xl mx-auto text-left space-y-6">
+<div>
+<h4 class="text-xl font-semibold text-gray-900">Do I need an appointment?</h4>
+<p class="text-gray-700">Walk-ins are welcome, but appointments ensure faster service.</p>
+</div>
+<div>
+<h4 class="text-xl font-semibold text-gray-900">How long does diagnostics take?</h4>
+<p class="text-gray-700">Most tests are completed within 30–60 minutes depending on complexity.</p>
+</div>
+<div>
+<h4 class="text-xl font-semibold text-gray-900">Do you provide warranty?</h4>
+<p class="text-gray-700">Yes, we offer warranty on all electrical repairs and diagnostics.</p>
+</div>
+</div>
+</section>
+<!-- CONTACT -->
+<section class="bg-white text-gray-900 py-28 px-6" data-aos="fade-up" id="contact">
+<div class="max-w-[1200px] mx-auto">
+<h2 class="text-5xl font-black text-center text-[#1f3c88] mb-20 tracking-wide uppercase">Let’s Connect</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-left">
+<div class="rounded-2xl p-8 shadow-xl bg-gradient-to-tr from-white to-gray-100 border-t-4 border-red-500 transition-transform hover:-translate-y-1 hover:shadow-2xl">
+<h3 class="text-xl font-bold mb-4">📞 Call Support</h3>
+<p class="text-gray-700 mb-6">Speak directly with a certified technician — no waiting, no bots.</p>
+<a class="block w-full text-center bg-red-600 hover:bg-red-700 text-white py-3 rounded-xl font-bold tracking-wide" href="tel:6478659905">Call Now</a>
+</div>
+<div class="rounded-2xl p-8 shadow-xl bg-gradient-to-tr from-white to-gray-100 border-t-4 border-blue-500 transition-transform hover:-translate-y-1 hover:shadow-2xl">
+<h3 class="text-xl font-bold mb-4">📍 Location</h3>
+<p class="text-gray-700 mb-4">18 Strathearn Ave, Unit 28-29</p>
+<div class="rounded-lg overflow-hidden border border-gray-300">
+<iframe allowfullscreen="" class="w-full h-40" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.222183437772!2d-79.71415508451484!3d43.72328037911809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3f6932ff3d23%3A0xf4d91c50735fcb0d!2s18%20Strathearn%20Ave%2C%20Brampton%2C%20ON%20L6T%204P5!5e0!3m2!1sen!2sca!4v1686103281215!5m2!1sen!2sca"></iframe>
+</div>
+<a class="mt-4 block text-center bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-bold tracking-wide" href="https://www.google.com/maps/dir/?api=1&amp;destination=18+Strathearn+Ave+Unit+28-29,+Brampton,+ON" target="_blank">Get Directions</a>
+</div>
+<div class="rounded-2xl p-8 shadow-xl bg-gradient-to-tr from-white to-gray-100 border-t-4 border-green-500 transition-transform hover:-translate-y-1 hover:shadow-2xl flex flex-col justify-between">
+<h3 class="text-xl font-bold mb-4">⏰ Business Hours</h3>
+<ul class="text-gray-800 font-semibold space-y-1 text-sm mb-6 leading-relaxed">
+<li>Mon–Fri: 8:00 AM – 7:00 PM</li>
+<li>Saturday: 9:00 AM – 5:00 PM</li>
+<li>Sunday: Closed</li>
+</ul>
+<span class="block text-green-600 text-sm font-bold" id="open-status">Checking status...</span>
+</div>
+<div class="rounded-2xl p-8 shadow-xl bg-gradient-to-tr from-white to-gray-100 border-t-4 border-pink-500 transition-transform hover:-translate-y-1 hover:shadow-2xl flex flex-col justify-between">
+<h3 class="text-xl font-bold mb-4">📸 Instagram</h3>
+<p class="text-gray-700 mb-6">Check real-time stories, highlights, and actual jobs done.</p>
+<a class="block w-full text-center bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-xl font-bold tracking-wide" href="https://instagram.com/peelautodiagnostics" target="_blank">@peelautodiagnostics</a>
+</div>
+</div>
+<p class="mt-24 text-center text-sm text-gray-500">Division of HMS Auto Services Inc. | Powered by Peel Diagnostics</p>
+</div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const now = new Date();
+    const day = now.getDay();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const openStatus = document.getElementById("open-status");
+
+    let isOpen = false;
+    if (day >= 1 && day <= 5) {
+      isOpen = hour >= 8 && (hour < 19 || (hour === 19 && minute === 0));
+    } else if (day === 6) {
+      isOpen = hour >= 9 && (hour < 17 || (hour === 17 && minute === 0));
+    }
+
+    openStatus.textContent = isOpen ? "Open Now" : "Closed Now";
+    openStatus.classList.toggle("text-green-600", isOpen);
+    openStatus.classList.toggle("text-red-600", !isOpen);
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const now = new Date();
+    const day = now.getDay();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const openStatus = document.getElementById("open-status");
+
+    let isOpen = false;
+    if (day >= 1 && day <= 5) {
+      isOpen = hour >= 8 && (hour < 19 || (hour === 19 && minute === 0));
+    } else if (day === 6) {
+      isOpen = hour >= 9 && (hour < 17 || (hour === 17 && minute === 0));
+    }
+
+    openStatus.textContent = isOpen ? "Open Now" : "Closed Now";
+    openStatus.classList.toggle("text-green-600", isOpen);
+    openStatus.classList.toggle("text-red-600", !isOpen);
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const now = new Date();
+    const day = now.getDay();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const openStatus = document.getElementById("open-status");
+
+    let isOpen = false;
+    if (day >= 1 && day <= 5) {
+      isOpen = hour >= 8 && (hour < 19 || (hour === 19 && minute === 0));
+    } else if (day === 6) {
+      isOpen = hour >= 9 && (hour < 17 || (hour === 17 && minute === 0));
+    }
+
+    openStatus.textContent = isOpen ? "Open Now" : "Closed Now";
+    openStatus.classList.toggle("text-green-600", isOpen);
+    openStatus.classList.toggle("text-red-600", !isOpen);
+  });
+</script>
+<!-- FOOTER -->
+<footer class="bg-black text-center text-white py-6 text-sm">
+    © 2025 Peel Automotive Diagnostics &amp; Repair • Follow us @peelautodiagnostics
+  </footer>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    AOS.init({ duration: 600, once: true });
+
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    let isOpen = false;
+
+    menuBtn.addEventListener("click", () => {
+      isOpen = !isOpen;
+      if (isOpen) {
+        menu.classList.remove("translate-x-full");
+      } else {
+        menu.classList.add("translate-x-full");
+      }
+    });
+
+    menu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href");
+        menu.classList.add("translate-x-full");
+        isOpen = false;
+        setTimeout(() => {
+          document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      });
+    });
+  });
+</script>
+</body>
+</html>
